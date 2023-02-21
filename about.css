@@ -1,0 +1,13 @@
+.urgent{
+    background-color: #ff5c16;
+}
+.bg-1 {
+    background-image: url("https://www.nicepng.com/png/detail/238-2389570_modyfikacja-strony-internetowej-background-images-for-websites-professional.png");
+    background-size: cover;
+}
+
+.bg-2{
+    background-image: url("https://img.freepik.com/free-vector/social-media-icons_53876-89124.jpg?w=2000");
+    background-size: cover;
+    background-position:right;
+}

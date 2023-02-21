@@ -1,0 +1,434 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    i
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="icon" type="image/x-icon" href="/src/favicon.png">
+    <link rel="stylesheet" href="main.css">
+    <link rel="aboutus" href="about.html">
+
+
+    <title>SBD QNA</title>
+</head>
+
+<body>
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+
+    <nav class="navbar navbar-expand-md navbar-light border-bottom p-0 ps-5">
+        <div class="container">
+            <a class="navbar-brand" href="about.html">
+                <span class="text-main-color fw-bold fs-3"><img class="rounded-circle" src="src/sbd logo.jpg" width="40"
+                        height="40"></span>
+            </a>
+            <ul class="navbar-nav">
+                <div class="row">
+                    <div class="col-md-4 col-sm-4 col-xs-4">
+                        <li class="nav-item border-main-color">
+                            <a class="nav-link" href="#">
+                                <div class="mt-2">
+                                    <span class="fw-bold">Question</span>
+                                </div>
+                            </a>
+                        </li>
+                    </div>
+
+                    <div class="col-md-4 col-sm-4 col-xs-4">
+                        <li class="nav-item ">
+                            <a class="nav-link" href="#">
+                                <span class="position-relative me-auto">
+                                    <div class="mt-2">
+                                        <span class="fw-bold ">Answer</span>
+                                    </div>
+                                </span>
+                            </a>
+                        </li>
+                    </div>
+
+
+                    <div class="col-md-4 col-sm-4 col-xs-4">
+                        <li class="nav-item ">
+                            <a class="nav-link" href="#">
+                                <span class="position-relative me-auto">
+                                    <div class="mt-2">
+                                        <span class="fw-bold ">Post</span>
+                                    </div>
+                                </span>
+                            </a>
+                        </li>
+                    </div>
+                </div>
+
+
+            </ul>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+
+
+                <form class="d-flex">
+                    <input class="form-control me-2 search-icon ms-4" type="search" placeholder="Search here">
+                </form>
+
+                <ul class="navbar-nav px-1">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <img class="profile rounded-circle" src="src/profile.jpg">
+                        </a>
+                    </li>
+                </ul>
+                <!-- Button to Open the Modal -->
+                <button type="button"
+                    class="btn bg-main-color rounded-pill border border-1 fs-6 text-light fw-bold m-3 py-1 "
+                    data-toggle="modal" data-target="#myModal">
+                    Free Consultancy
+                </button>
+
+                <!-- The Modal -->
+                <div class="modal" id="myModal">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+
+                            <!-- Modal Header -->
+                            <div class="modal-header">
+                                <h4 class="modal-title">Submit Form</h4>
+                                <button type="button" class="Close" data-dismiss="modal">&times;</button>
+                            </div>
+
+                            <!-- Modal body -->
+
+
+                            <div class="modal-body">
+                                <form action="/action_page.php">
+                                    <div class="form-group">
+                                        <label for="email">Email:</label>
+                                        <input type="email" class="form-control" id="email" placeholder="Enter email"
+                                            name="email">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="pwd">Password:</label>
+                                        <input type="password" class="form-control" id="pwd"
+                                            placeholder="Enter password" name="pswd">
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="number">Phone:</label>
+                                        <input type="number" class="form-control" id="phone"
+                                            placeholder="Enter phone no" name="phone">
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="address">Address:</label>
+                                        <input type="address" class="form-control" id="address"
+                                            placeholder="Enter your address" name="address">
+                                    </div>
+
+                                    <div class="form-group form-check">
+                                        <label class="form-check-label">
+                                            <input class="form-check-input" type="checkbox" name="remember"> Remember me
+                                        </label>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Submit</button>
+                                </form>
+                            </div>
+
+                            <!-- Modal footer -->
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <div class="btn-group">
+                    <button id="button1" type="button" class="btn btn-sm mb-1 bg-main-color fw-bold">Recent
+                        Update</button>
+                    <button id="button2" type="button"
+                        class="btn btn-sm mb-1 bg-main-color dropdown-toggle dropdown-toggle-split"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        <span class="visually-hidden">Toggle Dropdown</span>
+                    </button>
+
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item fw-bold" href="#">Our Program</a></li>
+                        <li><a class="dropdown-item fw-bold" href="#">Our Achievement</a></li>
+                        <li><a class="dropdown-item fw-bold" href="#">Events@SBD</a></li>
+                    </ul>
+                </div>
+
+                <div class="ms-3">
+                    <a href="">
+                        <button type="button"
+                            class="btn bg-main-color mb-1 rounded-pill border border-1 fs-6 text-light fw-bold py-1 ">
+                            For Teachers
+                        </button>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+
+
+    </nav>
+
+    <div class="bg-light pt-4">
+        <div class="container mb-5">
+            <div class="row">
+
+
+                <div class="col-md-9">
+                    <div class="bg-white border-gray">
+                        <div class="row">
+                            <div class="col">
+                                <img class="profile rounded-circle" src="src/profile.jpg">
+                                <input class="w-75 border-gray text-gray-dark rounded-pill bg-light ps-2 text-start"
+                                    type="search" placeholder="What do you want to ask or share?" />
+                            </div>
+                        </div>
+
+                        <div class="row text-gray-darker pb-2 ps-5 pe-4">
+                            <div class="col text-center border-end hover-dark">
+                                <img src="src/question-mark.png" width="20px" height="20px">
+                                <span>Ask</span>
+                            </div>
+                            <div class="col text-center border-end hover-dark">
+                                <img src="src/pen.png" width="20px" height="20px">
+                                <span>Answer</span>
+                            </div>
+                            <div class="col text-center border-end hover-dark">
+                                <img src="src/post.png" width="20px" height="20px">
+                                <span>Post</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="post bg-white border-gray mt-4">
+                        <div class=" pt-2 d-flex justify-content-between">
+                            <div class="d-flex">
+                                <img class="post-profile rounded-circle" src="src/profile.jpg">
+                                <div class="d-flex flex-column">
+                                    <span class="fw-bold fs-6">Himanshu Choudhary</span>
+                                    <span class="text-gray-darker fs-6">Digital Marketing Expert</span>
+                                </div>
+                            </div>
+
+                            <div class="p-2 text-gray-darker">
+                                <button class="btn rounded-circle hover-dark  p-1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24" viewbox="0 0 48 48"
+                                        fill="currentColor">
+                                        <path
+                                            d="m12.45 37.65-2.1-2.1L21.9 24 10.35 12.45l2.1-2.1L24 21.9l11.55-11.55 2.1 2.1L26.1 24l11.55 11.55-2.1 2.1L24 26.1Z" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="post-body pt-2 ps-3">
+                            <div class="post-title fw-bold">
+                                <a class="text-decoration-none text-black" href="#">
+                                    School For Business Development
+                                </a>
+                            </div>
+                            <div class="post-text pt-1">
+                                If you're excited by the challenge of becoming a digital marketing specialist, we've put
+                                together this resource to help you get started. You'll learn what digital marketing
+                                specialists do each day, the most important skills they need to succeed, and the fastest
+                                way to become a digital marketing specialist in 2022.
+                            </div>
+                        </div>
+                        <div class="post-image pt-2 pb-1 ps-2">
+                            <img class="img-fluid" src="src/sbd.jpg">
+                        </div>
+                        <div class="post-footer pt-2">
+                            <div class="btn-group" role="group">
+                                <button type="button"
+                                    class="left-button post-button bg-second-color border-0 text-black p-1"><img
+                                        src="src/up.png" width="20" class="me-2">15</button>
+                                <button type="button"
+                                    class="right-button post-button bg-second-color border-0 text-black p-1"><img
+                                        src="src/down.png" width="20" class="me-2"></button>
+                            </div>
+                            <button type="button"
+                                class=" post-button bg-second-color rounded-circle border-0 text-black p-1"><img
+                                    src="src/share.png" width="20" class="me-2">1</button>
+                            <button type="button"
+                                class=" post-button bg-second-color rounded-circle border-0 text-black p-1"><img
+                                    src="src/comment.png" width="20" class="me-2">2</button>
+                        </div>
+                    </div>
+
+
+                    <div class="post bg-white border-gray mt-4">
+                        <div class=" pt-2 d-flex justify-content-between">
+                            <div class="d-flex">
+                                <img class="post-profile rounded-circle" src="src/ritik.png">
+                                <div class="d-flex flex-column">
+                                    <span class="fw-bold fs-6">Ritik Malik</span>
+                                    <span class="text-gray-darker fs-6">Full Stack Web Developer</span>
+                                </div>
+                            </div>
+
+                            <div class="p-2 text-gray-darker">
+                                <button class="btn rounded-circle hover-dark  p-1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24" viewbox="0 0 48 48"
+                                        fill="currentColor">
+                                        <path
+                                            d="m12.45 37.65-2.1-2.1L21.9 24 10.35 12.45l2.1-2.1L24 21.9l11.55-11.55 2.1 2.1L26.1 24l11.55 11.55-2.1 2.1L24 26.1Z" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="post-body pt-2 ps-3">
+                            <div class="post-title fw-bold">
+                                <a class="text-decoration-none text-black" href="#">
+                                    Working with technologies like HTML,CSS,JAVASCRIPT & (MERN).
+                                </a>
+                            </div>
+                            <div class="post-text pt-1">
+                                Full Stack Developers are highly intelligent people who have trained through their
+                                education or through years in related fields on the job force. These jobs are in high
+                                demand, but employers don't want to trust their web development to just anyone. There
+                                are certain standards of education and work experience that Full Stack Developers have
+                                to meet to be hired. These vary from employer to employer, but here are some good bets.
+                            </div>
+                        </div>
+                        <div class="post-image pt-2 pb-1 ps-2">
+                            <img class="img-fluid" src="src/AI.jpg" width="720" height="720">
+                        </div>
+                        <div class="post-footer pt-2">
+                            <div class="btn-group" role="group">
+                                <button type="button"
+                                    class="left-button post-button bg-second-color border-0 text-black p-1"><img
+                                        src="src/up.png" width="20" class="me-2">15</button>
+                                <button type="button"
+                                    class="right-button post-button bg-second-color border-0 text-black p-1"><img
+                                        src="src/down.png" width="20" class="me-2"></button>
+                            </div>
+                            <button type="button"
+                                class=" post-button bg-second-color rounded-circle border-0 text-black p-1"><img
+                                    src="src/share.png" width="20" class="me-2">1</button>
+                            <button type="button"
+                                class=" post-button bg-second-color rounded-circle border-0 text-black p-1"><img
+                                    src="src/comment.png" width="20" class="me-2">2</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <ul class="list-group my-3">
+                        <li class="list-group-item ">
+                            <div class="">
+                                <img src="src/sbd1.jpg" width="270" height="300" class="rounded">
+                            </div>
+                            <div class="ps-2 lh-1">
+                                <div class="fw-bold">Admission Open</div>
+                                <div class="text-secondry"><small> Chance to learn new tecnologies with digital
+                                        marketing</small></div>
+                            </div>
+                        </li>
+
+                    </ul>
+
+                    <ul class="list-group my-3">
+                        <li class="list-group-item ">
+                            <div class="">
+                                <img src="src/sbd2.jpg" width="270" height="300" class="rounded">
+                            </div>
+                            <div class="ps-2 lh-1">
+                                <div class="fw-bold">Why you got confused</div>
+                                <div class="text-secondry"><small> we are here for resolving your solution</small></div>
+                            </div>
+                        </li>
+
+                    </ul>
+
+                    <ul class="list-group my-3">
+                        <li class="list-group-item ">
+                            <div class="">
+                                <img src="src/sbd3.jpg" width="270" height="300" class="rounded">
+                            </div>
+                            <div class="ps-2 lh-1">
+                                <div class="fw-bold">If you want to learn skills</div>
+                                <div class="text-secondry"><small> We are here for you to show you the path</small>
+                                </div>
+                            </div>
+                        </li>
+
+                    </ul>
+
+                    <ul class="list-group my-3">
+                        <li class="list-group-item ">
+                            <div class="">
+                                <img src="src/sbd4.jpg" width="270" height="300" class="rounded">
+                            </div>
+                            <div class="ps-2 lh-1">
+                                <div class="fw-bold">Start your Carrer</div>
+                                <div class="text-secondry"><small> and make your life enjoyful in every aspect</small>
+                                </div>
+                            </div>
+                        </li>
+
+                    </ul>
+
+                    <ul class="list-group my-3">
+                        <li class="list-group-item ">
+                            <div class="">
+                                <img src="src/sbd2.jpg" width="270" height="300" class="rounded">
+                            </div>
+                            <div class="ps-2 lh-1">
+                                <div class="fw-bold">Why you got confused</div>
+                                <div class="text-secondry"><small> we are here for resolving your solution</small></div>
+                            </div>
+                        </li>
+
+                    </ul>
+
+                    <ul class="list-group my-3">
+                        <li class="list-group-item ">
+                            <div class="">
+                                <img src="src/sbd3.jpg" width="270" height="300" class="rounded">
+                            </div>
+                            <div class="ps-2 lh-1">
+                                <div class="fw-bold">If you want to learn skills</div>
+                                <div class="text-secondry"><small> We are here for you to show you the path</small>
+                                </div>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
